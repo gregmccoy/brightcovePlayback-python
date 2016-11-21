@@ -5,8 +5,6 @@ class Playlist(object):
 
 
     def get(self, id=""):
-        if id != "":
-            id = id + "/"
         return self.client.call_api("https://edge.api.brightcove.com/playback/v1/accounts/" + self.client.account_id + "/playlists/" + id, "GET")
 
 

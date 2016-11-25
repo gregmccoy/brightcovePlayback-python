@@ -15,8 +15,8 @@ class PlaybackClient(object):
         self.contenttype = "application/x-www-form-urlencoded"
 
 
-   def call_api(self, endpoint, method, data=None, files=None):
-	"""Calls the Brightcove API
+    def call_api(self, endpoint, method, data=None, files=None):
+        """Calls the Brightcove API
 
         Helper method to call the API
 
@@ -24,8 +24,8 @@ class PlaybackClient(object):
             self (PlaybackClient): PlaybackClient instance
             endpoint (str): Str containg URL to call
             method (str): http method to use (POST, GET, DELETE, PUT)
-	    data (dict): Extra data to send with request
-	    files (file): File to send on request
+            data (dict): Extra data to send with request
+            files (file): File to send on request
 
         Returns:
             Response in JSON format
